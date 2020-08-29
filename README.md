@@ -1,7 +1,7 @@
-# silver plugin for elvish
+# silver plugin for zsh
 ## Dependencies
-- [`elvish`](https://elv.sh/)
+- `zsh`
 - [`silver`](https://github.com/reujab/silver/)
 ## Installation
-1. Run `use epm: epm:install https://github.com/silver-prompt/elvish` in `elvish`
-1. Add `use github.com/silver-prompt/elvish/silver` to `~/.elvish/rc.elv`
+1. Install [`antibody`](https://getantibody.github.io/)
+1. Add `silver-prompt/zsh` to your antibody plugins file
