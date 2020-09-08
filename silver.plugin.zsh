@@ -16,3 +16,5 @@ precmd() {
   RPROMPT="$(code=$? jobs=$(jobs | wc -l) cmdtime=$(($(now)-$SILVER_START)) silver rprint)"
   SILVER_START=$(now)
 }
+
+export VIRTUAL_ENV_DISABLE_PROMPT=1
