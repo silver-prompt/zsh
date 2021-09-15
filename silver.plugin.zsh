@@ -12,8 +12,8 @@ preexec() {
 
 precmd() {
   ZLE_RPROMPT_INDENT=0
-  PROMPT="$(code=$? jobs=$(jobs | wc -l) cmdtime=$(($(now)-$SILVER_START)) silver lprint)"
-  RPROMPT="$(code=$? jobs=$(jobs | wc -l) cmdtime=$(($(now)-$SILVER_START)) silver rprint)"
+  PROMPT="$(code=$? jobs=$(jobs | wc -l) cmdtime=$(($(now)-$SILVER_START)) silver lprint)%{$reset_color%}"
+  RPROMPT="$(code=$? jobs=$(jobs | wc -l) cmdtime=$(($(now)-$SILVER_START)) silver rprint)%{$reset_color%}"
   SILVER_START=$(now)
 }
 
